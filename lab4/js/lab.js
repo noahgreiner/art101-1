@@ -1,21 +1,13 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Watercolor Painting and Rock Paper Scissors
+// Author: Noah Greiner
+// Date: April 23, 2004
 
-// Constants
+Ask the user how many rounds they want to play for
+Prompt user to enter one of three inputs (R./P./S. respectively)
+Randomly generate an answer (Rock, Paper, or Scissors)
+Win/calculative functions:
+Score assignment: check who gets the point out of the pre-established rounds/variable
+Win conditions: check what beats what
+I.e “If player enters paper against scissors, then player gets point”
+Loop steps 2-4 until the round counter reaches the max it was set to
 
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
-
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();

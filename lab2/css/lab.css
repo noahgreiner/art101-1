@@ -1,11 +1,28 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+ h1 {
+    color: brown(55, 120, 198);
+    font-size: 800%;
+  }
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
+  p {
+    font-family: 'Courier New', Courier, monospace ;
+    text-indent:  20px;
+    margin-left: auto;
+    color: paleturquoise
+  }
+
+#content {
+    background-color: light green;
+    border: dotted 5px burlywood;
+    font-size: 20px;
+    width: 500px;
     padding: 10px;
+<<<<<<< Updated upstream
     margin-bottom: 10px;
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
 
 .photo { width: 25%;}
+=======
+  }
+>>>>>>> Stashed changes
