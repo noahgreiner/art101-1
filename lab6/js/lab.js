@@ -8,14 +8,19 @@ let myTransport = ["bike", "bus", "walking", "uber"];
 
 // Defined Object:
 let myMainRide = {
+  make: "Trek Elekra",
+  model: "Ponto Go!",
+  color: "Ocean Blue",
+  year: 2023,
+  age: function() {
+    return 2024 - this.year;
+  }
   
 }
 
-
-
-
-// output
+// Outputs
 document.writeln("Getting around: "+ myTransport + "<br>");
+
 document.writeln("My Main Ride: <pre>", JSON.stringify(myMainRide, null, '\t'), "</pre>" );
 
 // Functions
