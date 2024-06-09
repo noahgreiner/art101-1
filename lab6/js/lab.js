@@ -1,22 +1,18 @@
-// index.js - purpose and description here
+// Lab 6 - Arrays and Objects
 // Author: Noah Greiner
 // Due: May 9th
 
-// Constants
 
-// Arrays/Objects
+// Defined Array:
+let myTransport = ["bike", "bus", "walking", "uber"];
 
-var myTransport= ['feet', 'car', 'bus', 'skateboard'];
-var myMainRide = {
-  make: "Toyota",
-  model: "echo", 
-  year: 2005,
-  color: "blue", 
-  currentYear: 2023,
-  age: function() {
-    return this.currentYear - this.age;
-  }
+// Defined Object:
+let myMainRide = {
+  
 }
+
+
+
 
 // output
 document.writeln("Getting around: "+ myTransport + "<br>");

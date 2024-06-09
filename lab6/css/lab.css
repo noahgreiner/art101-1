@@ -8,4 +8,7 @@
     background-color: #d7f4f0;
   }
 
-  <image https://file.kelleybluebookimages.com/kbb/base/house/2000/2000-Toyota-Echo-RearSide_TOECHCPE004_505x352.jpg>
+  .myBike {
+    margin: 10px;
+    max-width: 500px;
+  }

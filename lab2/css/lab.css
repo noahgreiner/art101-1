@@ -1,6 +1,6 @@
  h1 {
     color: brown(55, 120, 198);
-    font-size: 800%;
+    font-size: 150%;
   }
 
   p {
@@ -10,19 +10,15 @@
     color: paleturquoise
   }
 
+
+.myBike {
+  margin: 10px;
+  max-width: 500px;
+}
 #content {
     background-color: light green;
     border: dotted 5px burlywood;
     font-size: 20px;
-    width: 500px;
+    width: 970px;
     padding: 10px;
-<<<<<<< Updated upstream
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
   }
-
-.photo { width: 25%;}
-=======
-  }
->>>>>>> Stashed changes
