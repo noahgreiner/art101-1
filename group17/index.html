@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send Email</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/lab.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/lab.js" defer></script>
+</head>
+<body>
+    <main id="content">
+        <section>
+            <h1>Send an Email</h1>
+            <div class="minor-section">
+                <form id="emailForm">
+                    <label for="fromEmail">From Email:</label>
+                    <input type="email" id="fromEmail" name="fromEmail" required><br>
+                    <label for="toEmail">To Email:</label>
+                    <input type="email" id="toEmail" name="toEmail" required><br>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea><br>
+                    <button type="submit">Send Email</button>
+                </form>
+                <div id="output"></div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        $(document).ready(function() {
+            $("#emailForm").submit(function(event) {
+                event.preventDefault();
+
+                const fromEmail = $("#fromEmail").val();
+                const toEmail = $("#toEmail").val();
+                const subject = $("#subject").val();
+                const message = $("#message").val();
+
+                $.ajax({
+                    url: "http://localhost:3000/send-email",
+                    type: "POST",
+                    data: JSON.stringify({ fromEmail, toEmail, subject, message }),
+                    contentType: "application/json",
+                    success: function(response) {
+                        $("#output").html("<p>Email sent successfully!</p>");
+                    },
+                    error: function(error) {
+                        $("#output").html("<p>Error sending email: " + error.responseText + "</p>");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
